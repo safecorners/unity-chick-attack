@@ -9,7 +9,7 @@ public class ChickGenerator : MonoBehaviour
     
     void Start()
     {
-        InvokeRepeating("GenerateChick", 0.1f, interval);   
+        InvokeRepeating(nameof(GenerateChick), 0.1f, interval);   
     }
 
     void GenerateChick()
